@@ -55,9 +55,6 @@
 					});
 				}, 100);
 			}
-			else if(direction === 'down' && $(this.element).hasClass('animated')){
-				scrollToRight();
-			}
 		}, {
 			offset: '85%'
 		});
