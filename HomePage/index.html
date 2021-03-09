@@ -14,6 +14,7 @@
 		<link rel="stylesheet" href="css/flexslider.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/font-awesome.css"/>
+		<link rel="stylesheet" href="css/preloader.css"/>
 		<!-- FOR IE9 below -->
 		<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -21,6 +22,17 @@
 	</head>
 	
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		
+		<!--主页预加载 prealoder area start -->
+		<div id="loading">
+		    <div id="loading-center">
+		        <div id="loading-center-absolute">
+		        <div class="object" id="first_object"></div>
+		        <div class="object" id="second_object"></div>
+		        <div class="object" id="third_object"></div>
+		        </div>
+		    </div>      
+		</div>
 		
 		<!--页面主体-->
 		<div id="addo-page"><a href="#" class="js-addo-nav-toggle addo-nav-toggle"><i></i></a>
@@ -71,6 +83,7 @@
 							<ul class="slides">
 								<li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
 									
+									<!--背景视频-->
 									<div class="overlay-video">
 										<video autoplay="" loop="" muted="">
 											<source src="images/background.mp4" type="video/mp4">
@@ -83,12 +96,16 @@
 										<div class="row">
 											<div class="col-md-12 js-fullheight slider-text animated fadeInUp" style="height: 888px;">
 												<div class="slider-text-inner">
+													
+													<!--主页主体-->
 													<div class="desc">
 														
 														<!-- Head Photo -->
 														<div class="image_wrap"> <img src="images/mine.png" alt="" draggable="false"> </div>
+														
 														<!-- Name -->
 														<h1>Clay Zhao</h1>			
+														
 														<!-- Information-->
 														<h2 class="cd-headline clip">
 															<span>I'm</span>
@@ -101,18 +118,22 @@
 														
 													</div>
 													
+													<!--下滑键-->
 													<div class="arrow bounce">
 														<a href="#about" data-scroll-nav="1" class="scroll">
 															<i class="ti-angle-double-down"></i>
 														</a>
 													</div>
+													
 												</div>
 											</div>
 										</div>
 									</div>
 								</li>
 							</ul>
+							
 							<ol class="flex-control-nav flex-control-paging"></ol>
+							
 							<ul class="flex-direction-nav">
 								<li class="flex-nav-prev"><a class="flex-prev flex-disabled" href="#" tabindex="-1">Previous</a></li>
 								<li class="flex-nav-next"><a class="flex-next flex-disabled" href="#" tabindex="-1">Next</a></li>
@@ -354,6 +375,7 @@
 						</div>
 					</div>
 				</div>
+				
 				<!-- Portfolio Section -->
 				<div id="portfolio" class="section">
 					<div class="addo-projects">

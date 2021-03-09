@@ -605,7 +605,7 @@ input[type="checkbox"] {
 
 .addo-hero .flexslider .slider-text > .slider-text-inner .desc .image_wrap img {
     border-radius: 100%;
-    border: 8px solid rgba(0, 0, 0, .1);
+    border: 8px solid rgba(0, 0, 0, .2);
 }
 
 .addo-hero .flexslider .slider-text > .slider-text-inner .arrow {
@@ -694,7 +694,7 @@ input[type="checkbox"] {
     object-fit: cover;
 }
 .overlay-color {
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.7);
 }
 .overlay-color {
     position: absolute;

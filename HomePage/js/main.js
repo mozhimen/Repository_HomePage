@@ -20,6 +20,12 @@
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
+	
+	// 01. PreLoader Js
+	$(window).on('load',function() {
+		$("#loading").fadeOut(2000);
+	});
+	
 	// Full Height
 	var fullHeight = function() {
 		if (!isMobile.any()) {
