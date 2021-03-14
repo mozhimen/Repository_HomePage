@@ -142,44 +142,6 @@
 		$('.sticky-parent').css('height', h);
 		$("#sticky_item").stick_in_parent();
 	};
-	//Scroll to the right
-	var scrollToRight = function(){
-		var outerBox = document.getElementById('outerBox');
-		var innerBox = outerBox.getElementsByTagName('ul')[0];
-		var Li = innerBox.getElementsByTagName('li'); //获取ul下的所有li
-		innerBox.innerHTML = innerBox.innerHTML + innerBox.innerHTML; //li下的内容进行想加
-		innerBox.style.width = Li[0].offsetWidth * Li.length + 'px'; //ul的宽度等于每个li的宽度乘以所有li的长度
-		var speed = 2
-				
-		//主方法
-		function move() {
-			//如果左边横向滚动了长度一半之后,回到初始位置
-			if (innerBox.offsetLeft < -innerBox.offsetWidth / speed) {
-				innerBox.style.left = '0'
-			}
-				
-			//如果右边横向滚动的距离大于0 就让他的位置回到一半
-			if (innerBox.offsetLeft > 0) {
-				innerBox.style.left = -innerBox.offsetWidth / speed + 'px';
-			}
-				
-			innerBox.style.left = innerBox.offsetLeft + speed + 'px'; //进行右横向滚动
-		}
-				
-		//调用方法
-		var timer = setInterval(move, 30)
-		
-		//鼠标指向的时候 暂停
-		outerBox.onmouseover = function() {
-			clearInterval(timer);
-		}
-				
-		//鼠标离开之后 继续滚动
-		outerBox.onmouseout = function() {
-			timer = setInterval(move, 30)
-		}
-	};
-	
 	// Document on load.
 	$(function() {
 		fullHeight();
