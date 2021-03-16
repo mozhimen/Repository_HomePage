@@ -1,307 +1,126 @@
-(function($) {
-    "use strict"
-    jQuery(document).ready(function() {
+jQuery(document).ready(function($){
+	//update these values if you change these breakpoints in the style.css file (or _layout.scss if you use SASS)
+	var MqM= 768,
+		MqL = 1024;
 
-        // Search Popup 
-        var bodyOvrelay =  $('#body-overlay');
-        var searchPopup = $('#search-popup');
+	var faqsSections = $('.cd-faq-group'),
+		faqTrigger = $('.cd-faq-trigger'),
+		faqsContainer = $('.cd-faq-items'),
+		faqsCategoriesContainer = $('.cd-faq-categories'),
+		faqsCategories = faqsCategoriesContainer.find('a'),
+		closeFaqsContainer = $('.cd-close-panel');
+	
+	//select a faq section 
+	faqsCategories.on('click', function(event){
+		event.preventDefault();
+		var selectedHref = $(this).attr('href'),
+			target= $(selectedHref);
+		if( $(window).width() < MqM) {
+			faqsContainer.scrollTop(0).addClass('slide-in').children('ul').removeClass('selected').end().children(selectedHref).addClass('selected');
+			closeFaqsContainer.addClass('move-left');
+			$('body').addClass('cd-overlay');
+		} else {
+	        $('body,html').animate({ 'scrollTop': target.offset().top - 19}, 200); 
+		}
+	});
 
-        $(document).on('click','#body-overlay',function(e){
-            e.preventDefault();
-        bodyOvrelay.removeClass('active');
-            searchPopup.removeClass('active');
-        });
-        $(document).on('click','#search',function(e){
-            e.preventDefault();
-            searchPopup.addClass('active');
-        bodyOvrelay.addClass('active');
-        });
+	//close faq lateral panel - mobile only
+	$('body').bind('click touchstart', function(event){
+		if( $(event.target).is('body.cd-overlay') || $(event.target).is('.cd-close-panel')) { 
+			closePanel(event);
+		}
+	});
+	faqsContainer.on('swiperight', function(event){
+		closePanel(event);
+	});
 
-        // Navbar fix  
-        $(document).on('click','.navbar-area .navbar-nav li.menu-item-has-children>a',function(e){
-            e.preventDefault();
-        }) 
+	//show faq content clicking on faqTrigger
+	faqTrigger.on('click', function(event){
+		event.preventDefault();
+		$(this).next('.cd-faq-content').slideToggle(200).end().parent('li').toggleClass('content-visible');
+	});
 
-        // Hero Slider 
-        $('.cropium-hero-slider').slick({
-            dots: true,
-            infinite: true,
-            speed: 1200,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            fade: true,
-            arrows: false,
-        });
+	//update category sidebar while scrolling
+	$(window).on('scroll', function(){
+		if ( $(window).width() > MqL ) {
+			(!window.requestAnimationFrame) ? updateCategory() : window.requestAnimationFrame(updateCategory); 
+		}
+	});
 
-        // Feature Slider
-        $('.feature-slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 1000,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: true,
-            prevArrow: '<i class="prev-arrow fa fa-long-arrow-left"></i>',
-            nextArrow: '<i class="next-arrow fa fa-long-arrow-right"></i>',
-            responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    }
-                },
-                    {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                }, {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                }, 
-            ]
-        });
+	$(window).on('resize', function(){
+		if($(window).width() <= MqL) {
+			faqsCategoriesContainer.removeClass('is-fixed').css({
+				'-moz-transform': 'translateY(0)',
+			    '-webkit-transform': 'translateY(0)',
+				'-ms-transform': 'translateY(0)',
+				'-o-transform': 'translateY(0)',
+				'transform': 'translateY(0)',
+			});
+		}	
+		if( faqsCategoriesContainer.hasClass('is-fixed') ) {
+			faqsCategoriesContainer.css({
+				'left': faqsContainer.offset().left,
+			});
+		}
+	});
 
-        // CounterUp 
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1500
-        });
+	function closePanel(e) {
+		e.preventDefault();
+		faqsContainer.removeClass('slide-in').find('li').show();
+		closeFaqsContainer.removeClass('move-left');
+		$('body').removeClass('cd-overlay');
+	}
 
-        // Pricing Tab 
-        $(".tab-accordion ul li").on('click', function() {
-            var tabClass = $(this).attr("class");
-            $(this).addClass("active").siblings().removeClass("active");
-            $("." + tabClass + "-content").addClass("active").siblings().removeClass("active");
-        });
+	function updateCategory(){
+		updateCategoryPosition();
+		updateSelectedCategory();
+	}
 
-        // Video Play Button
-        $('.video-play-button a').magnificPopup({
-            type: 'iframe'
-        }); 
+	function updateCategoryPosition() {
+		var top = $('.cd-faq').offset().top,
+			height = jQuery('.cd-faq').height() - jQuery('.cd-faq-categories').height(),
+			margin = 20;
+		if( top - margin <= $(window).scrollTop() && top - margin + height > $(window).scrollTop() ) {
+			var leftValue = faqsCategoriesContainer.offset().left,
+				widthValue = faqsCategoriesContainer.width();
+			faqsCategoriesContainer.addClass('is-fixed').css({
+				'left': leftValue,
+				'top': margin,
+				'-moz-transform': 'translateZ(0)',
+			    '-webkit-transform': 'translateZ(0)',
+				'-ms-transform': 'translateZ(0)',
+				'-o-transform': 'translateZ(0)',
+				'transform': 'translateZ(0)',
+			});
+		} else if( top - margin + height <= $(window).scrollTop()) {
+			var delta = top - margin + height - $(window).scrollTop();
+			faqsCategoriesContainer.css({
+				'-moz-transform': 'translateZ(0) translateY('+delta+'px)',
+			    '-webkit-transform': 'translateZ(0) translateY('+delta+'px)',
+				'-ms-transform': 'translateZ(0) translateY('+delta+'px)',
+				'-o-transform': 'translateZ(0) translateY('+delta+'px)',
+				'transform': 'translateZ(0) translateY('+delta+'px)',
+			});
+		} else { 
+			faqsCategoriesContainer.removeClass('is-fixed').css({
+				'left': 0,
+				'top': 0,
+			});
+		}
+	}
 
-        // Client Slider
-        $('.client-slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 1200,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            fade: true,
-            arrows: true,
-            prevArrow: '<i class="prev-arrow fa fa-long-arrow-left"></i>',
-            nextArrow: '<i class="next-arrow fa fa-long-arrow-right"></i>',
-            responsive: [{
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    }
-                },
-            ]
-        });
-
-        // Blog Slider
-        $('.blog-slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 1000,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: true,
-            prevArrow: '<i class="prev-arrow fa fa-long-arrow-left"></i>',
-            nextArrow: '<i class="next-arrow fa fa-long-arrow-right"></i>',
-            responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    }
-                },
-                    {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                }, {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                }, 
-            ]
-        });
-
-        // Service Slider
-        $('.service-slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 1000,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: true,
-            prevArrow: '<i class="prev-arrow fa fa-long-arrow-left"></i>',
-            nextArrow: '<i class="next-arrow fa fa-long-arrow-right"></i>',
-            responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    }
-                },
-                    {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                }, {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                }, 
-            ]
-        });
-        
-        // Brand Slider
-        $('.brand-slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 1000,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            arrows: false,
-            responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    }
-                },
-                    {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                }, {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                }, 
-            ]
-        });
-
-        // Case Study Slider
-        $('.case-study-slider').slick({
-            dots: false,
-            infinite: true,
-            speed: 1200,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            arrows: true,
-            prevArrow: '<i class="prev-arrow fa fa-long-arrow-left"></i>',
-            nextArrow: '<i class="next-arrow fa fa-long-arrow-right"></i>',
-            responsive: [{
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    }
-                },
-                    {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                }, {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                }, 
-            ]
-        });
-
-        // Client Slider Home 
-        $('.client-slider-home-2').slick({
-            dots: false,
-            infinite: true,
-            speed: 1200,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            arrows: false,
-            responsive: [{
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                }, 
-            ]
-        });
-
-        // Service Details Tab 
-        $(".service-widget-tab ul li").on('click', function() {
-            var tabClass = $(this).attr("class");
-            $(this).addClass("active").siblings().removeClass("active");
-            $("." + tabClass + "-content").addClass("active").siblings().removeClass("active");
-        });
-
-
-    });
-
-    jQuery(window).on('load', function() {
-
-        // WOW JS
-        new WOW().init();
-
-        // Preloader
-        var preLoder = $("#preloader");
-        preLoder.fadeOut(0);
-
-    });
-})(jQuery);
+	function updateSelectedCategory() {
+		faqsSections.each(function(){
+			var actual = $(this),
+				margin = parseInt($('.cd-faq-title').eq(1).css('marginTop').replace('px', '')),
+				activeCategory = $('.cd-faq-categories a[href="#'+actual.attr('id')+'"]'),
+				topSection = (activeCategory.parent('li').is(':first-child')) ? 0 : Math.round(actual.offset().top);
+			
+			if ( ( topSection - 20 <= $(window).scrollTop() ) && ( Math.round(actual.offset().top) + actual.height() + margin - 20 > $(window).scrollTop() ) ) {
+				activeCategory.addClass('selected');
+			}else {
+				activeCategory.removeClass('selected');
+			}
+		});
+	}
+});
