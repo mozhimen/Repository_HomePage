@@ -1,1173 +1,1426 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Required Meta Tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <!-- Page Title -->
-        <title>Softomart business Template</title>
+<!doctype html>
+<html lang="zxx">
 
-        <!-- Favicon Icon -->
-        <link rel="shortcut icon" href="favicon.png">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Home</title>
+	<!-- Template CSS -->
+	<link rel="stylesheet" href="assets/css/style-starter.css">
+	<!-- Template CSS -->
+	<link href="http://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
+		rel="stylesheet">
+	<!-- Template CSS -->
+</head>
 
-        <!-- CSS Files -->
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/slick.css">
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="assets/css/jquery.lineProgressbar.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+<body>
 
-    <body>
-        <!-- Preloader Starts -->
-        <div class="preloader" id="preloader">
-            <div class="preloader-inner">
-                <div class="spinner">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
-                </div>
-            </div>
-        </div>
+	<!-- header -->
+	<header id="site-header" class="w3l-header fixed-top">
+		<!--/nav-->
+		<nav class="navbar navbar-expand-lg navbar-light fill px-lg-0 py-0 px-3">
+			<div class="container">
+				<h1><a class="navbar-brand" href="index.html"><span class="fa fa-play icon-log"
+							aria-hidden="true"></span>
+						ProShowz </a></h1>
+				<!-- if logo is image enable this   
+						<a class="navbar-brand" href="#index.html">
+							<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+						</a> -->
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<!-- <span class="navbar-toggler-icon"></span> -->
+					<span class="fa icon-expand fa-bars"></span>
+					<span class="fa icon-close fa-times"></span>
+				</button>
 
-        <!-- Search PopUp Starts -->
-        <div class="body-overlay" id="body-overlay"></div>
-        <div class="search-popup" id="search-popup">
-            <form action="index.html" class="search-form">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Here'" required>
-                </div>
-                <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+				<li class="nav-item">
+								<a class="nav-link" href="genre.html">Genre</a>
+							</li>
 
-        <!-- Header Section Starts -->
-        <header class="cropium-header-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- Navbar Starts -->
-                        <nav class="navbar navbar-area navbar-expand-lg nav-style-02 nav-absolute">
-                            <div class="container nav-container">
-                                <div class="responsive-mobile-menu">
-                                    <div class="logo-wrapper">
-                                        <a href="index.html" class="logo">
-                                            <img src="assets/images/logo.png" alt="logo">
-                                        </a>
-                                    </div>
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cropium-main-menu" 
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                        <span class="toggle-icon"></span>
-                                        <span class="toggle-icon"></span>
-                                        <span class="toggle-icon"></span>
-                                    </button>
-                                </div>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
 
-                                <div class="collapse navbar-collapse" id="cropium-main-menu">
-                                    <ul class="navbar-nav">
-                                        <li class="menu-item-has-children current-menu-item">
-                                            <a href="#">home</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">home 01</a></li>
-                                                <li><a href="home-2.html">home 02</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">about</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="about.html">about 01</a></li>
-                                                <li><a href="about-2.html">about 02</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="blog-details.html">blog details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="service.html">service</a></li>
-                                                <li><a href="service-details.html">service details</a></li>
-                                                <li><a href="project.html">project</a></li>
-                                                <li><a href="project-details.html">project details</a></li>
-                                                <li><a href="404.html">404</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- Nav Right Content Starts -->
-                                <div class="nav-right-content">
-                                    <ul>
-                                        <li class="search" id="search">
-                                            <i class="fa fa-search"></i>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html" class="template-button">contact us</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Nav Right Content End -->
-                            </div>
-                        </nav>
-                        <!-- Navbar End -->
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Hero Section Starts -->
-        <section class="cropium-hero-section">
-            <div class="hero-left-shape"></div>
-            <img src="assets/images/planet.png" class="planet-image item-animateThree" alt="planet">
-            <!-- Hero Slider Starts -->
-            <div class="cropium-hero-slider">
-                <div class="hero-single-slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 align-self-center">
-                                <div class="single-slide-content">
-                                    <span class="title-top"><i class="fa fa-thumbs-up"></i> welcome to softomart</span>
-                                    <h1 class="title"><span>we champion</span> the bold to achieve the extraordinary.</h1>
-                                    <div class="hero-button">
-                                        <a href="#" class="template-button">learn more <i class="fa fa-caret-right"></i></a>
-                                        <a href="#" class="template-button ml-4">get in touch <i class="fa fa-caret-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="single-slide-image">
-                                    <div class="slide-shape-blue"></div>
-                                    <div class="slide-shape-yellow item-ripple-yellow"></div>
-                                    <img src="assets/images/tree.png" class="tree-image item-animateOne" alt="tree">
-                                    <img src="assets/images/hero-slide-1.png" alt="slide-image">
-                                    <div class="slide-image-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-single-slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 align-self-center">
-                                <div class="single-slide-content">
-                                    <span class="title-top"><i class="fa fa-thumbs-up"></i> welcome to softomart</span>
-                                    <h1 class="title"><span>we champion</span> the bold to achieve the extraordinary.</h1>
-                                    <div class="hero-button">
-                                        <a href="#" class="template-button">learn more <i class="fa fa-caret-right"></i></a>
-                                        <a href="#" class="template-button ml-4">get in touch <i class="fa fa-caret-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="single-slide-image">
-                                    <div class="slide-shape-blue"></div>
-                                    <div class="slide-shape-yellow item-ripple-yellow"></div>
-                                    <img src="assets/images/tree.png" class="tree-image item-animateOne" alt="tree">
-                                    <img src="assets/images/hero-slide-2.png" alt="slide-image">
-                                    <div class="slide-image-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-single-slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 align-self-center">
-                                <div class="single-slide-content">
-                                    <span class="title-top"><i class="fa fa-thumbs-up"></i> welcome to softomart</span>
-                                    <h1 class="title"><span>we champion</span> the bold to achieve the extraordinary.</h1>
-                                    <div class="hero-button">
-                                        <a href="#" class="template-button">learn more <i class="fa fa-caret-right"></i></a>
-                                        <a href="#" class="template-button ml-4">get in touch <i class="fa fa-caret-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="single-slide-image">
-                                    <div class="slide-shape-blue"></div>
-                                    <div class="slide-shape-yellow item-ripple-yellow"></div>
-                                    <img src="assets/images/tree.png" class="tree-image item-animateOne" alt="tree">
-                                    <img src="assets/images/hero-slide-3.png" alt="slide-image">
-                                    <div class="slide-image-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Service Section Starts -->
-        <section class="cropium-service-section padding-top-120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay=".1s">
-                        <div class="single-service-item d-flex align-items-center">
-                            <div class="single-service-icon">
-                                <img src="assets/images/service-icon-1.png" alt="icon">
-                            </div>
-                            <div class="single-service-content">
-                                <h4 class="title">Solution Focused</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur odio maiores.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
-                        <div class="single-service-item d-flex align-items-center">
-                            <div class="single-service-icon">
-                                <img src="assets/images/service-icon-2.png" alt="icon">
-                            </div>
-                            <div class="single-service-content">
-                                <h4 class="title">Customer Oriented</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur odio maiores.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="single-service-item d-flex align-items-center">
-                            <div class="single-service-icon">
-                                <img src="assets/images/service-icon-3.png" alt="icon">
-                            </div>
-                            <div class="single-service-content">
-                                <h4 class="title">Decision Maker</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur odio maiores.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section Starts -->
-        <section class="cropium-about-section padding-top-90 padding-bottom-120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInLeft">
-                        <div class="about-page-image">
-                            <img src="assets/images/about-image.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 align-self-lg-center wow fadeInRight">
-                        <div class="about-page-content">
-                            <div class="section-title">
-                                <span class="title-top"><i class="fa fa-thumbs-up"></i> about softomart</span>
-                                <h2 class="title">We Shape the Perfect Solution for <span>Company.</span></h2>
-                            </div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis vel aperiam non est nisi sapiente recusandae ad exercitationem temporibus sequi hic eius commodi, cupiditate consectetur quia dolores architecto quidem dignissimos unde. Repudiandae pariatur.</p>
-                            <div class="about-page-info">
-                                <img src="assets/images/about-info-shape.png" alt="">
-                                <h3 class="title">best Corporate overall world <br><span>since 2010</span></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feature Section Starts -->
-        <section class="feature-home-2 feature-about-page padding-top-115 padding-bottom-90">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center">
-                            <span class="title-top"><i class="fa fa-wrench"></i> our feature</span>
-                            <h2 class="title">The most <span>Powerful tools.</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".1s">
-                        <div class="single-feature-item">
-                            <div class="feature-icon template-icon blue-icon">
-                                <i class="fa fa-line-chart"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4 class="title">VS code</h4>
-                                <div class="feature-content-para"><p>Strategy experience and analytical combine enable.</p></div>
-                                <a href="#" class="feature-btn">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="single-feature-item">
-                            <div class="feature-icon template-icon yellow-icon">
-                                <i class="fa fa-pie-chart"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4 class="title">bootstrap</h4>
-                                <div class="feature-content-para"><p>Strategy experience and analytical combine enable.</p></div>
-                                <a href="#" class="feature-btn">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="single-feature-item">
-                            <div class="feature-icon template-icon red-icon">
-                                <i class="fa fa-television"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4 class="title">laravel</h4>
-                                <div class="feature-content-para"><p>Strategy experience and analytical combine enable.</p></div>
-                                <a href="#" class="feature-btn">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="single-feature-item">
-                            <div class="feature-icon template-icon paste-icon">
-                                <i class="fa fa-wordpress"></i>
-                            </div>
-                            <div class="feature-content">
-                                <h4 class="title">wordPress</h4>
-                                <div class="feature-content-para"><p>Strategy experience and analytical combine enable.</p></div>
-                                <a href="#" class="feature-btn">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CounterUP Section Starts -->
-        <section class="cropium-counterup-section padding-top-120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-3 col-sm-6">
-                        <div class="single-counterup single-counterup-1">
-                            <div class="single-counterup-icon">
-                                <i class="fa fa-user-o"></i>
-                            </div>
-                            <div class="single-counterup-content">
-                                <div class="counter-number">
-                                    <h3 class="title counter">3,000</h3>
-                                    <h3 class="title">+</h3>
-                                </div>
-                                <span>daily active users</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6">
-                        <div class="single-counterup single-counterup-2">
-                            <div class="single-counterup-icon">
-                                <i class="fa fa-pencil-square-o"></i>
-                            </div>
-                            <div class="single-counterup-content">
-                                <div class="counter-number">
-                                    <h3 class="title counter">6,000</h3>
-                                    <h3 class="title">+</h3>
-                                </div>
-                                <span>tasks completed</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6">
-                        <div class="single-counterup single-counterup-3">
-                            <div class="single-counterup-icon">
-                                <i class="fa fa-briefcase"></i>
-                            </div>
-                            <div class="single-counterup-content">
-                                <div class="counter-number">
-                                    <h3 class="title counter">8,000</h3>
-                                    <h3 class="title">+</h3>
-                                </div>
-                                <span>completed projects</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6">
-                        <div class="single-counterup single-counterup-4">
-                            <div class="single-counterup-icon">
-                                <i class="fa fa-smile-o"></i>
-                            </div>
-                            <div class="single-counterup-content">
-                                <div class="counter-number">
-                                    <h3 class="title counter">4,000</h3>
-                                    <h3 class="title">+</h3>
-                                </div>
-                                <span>positive reviews</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section Starts -->
-        <section class="cropium-pricing-section padding-top-90 padding-bottom-90">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".1s">
-                        <div class="section-title text-center">
-                            <span class="title-top"><i class="fa fa-usd"></i> pricing plan</span>
-                            <h2 class="title">find the <span>right plan.</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- Tab Accordion Starts -->
-                <div class="tab-accordion">
-                    <div class="tab">
-                        <ul>
-                            <li class="tab-first active"><span>yearly</span></li>
-                            <li class="tab-second"><span>monthly</span></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tab-content">
-                        <div class="tab-first-content hidden-item active">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="single-pricing-box">
-                                        <img src="assets/images/pricing-flower.png" class="pricing-flower" alt="flower">
-                                        <div class="pricing-box-top d-flex align-items-center">
-                                            <div class="pricing-top-icon mr-3">
-                                                <i class="fa fa-smile-o"></i>
-                                            </div>
-                                            <div class="pricing-top-title">
-                                                <h6 class="title">individual</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="title">professional</h3>
-                                        <div class="pricing-amount">
-                                            $120 <span class="amount-opacity">/ year</span>
-                                        </div>
-                                        <ul class="pricing-list">
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>1TB of secure storage</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>discount code engine</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>unlimited product including apps intergrations</span>
-                                            </li>
-                                        </ul>
-                                        <div class="pricing-button ">
-                                            <a href="#" class="template-large-button">try its free 30 days</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="single-pricing-box active">
-                                        <img src="assets/images/pricing-flower.png" class="pricing-flower" alt="flower">
-                                        <div class="pricing-box-top d-flex align-items-center">
-                                            <div class="pricing-top-icon mr-3">
-                                                <i class="fa fa-smile-o"></i>
-                                            </div>
-                                            <div class="pricing-top-title">
-                                                <h6 class="title">individual</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="title">standard</h3>
-                                        <div class="pricing-amount">
-                                            $399 <span class="amount-opacity">/ year</span>
-                                        </div>
-                                        <ul class="pricing-list">
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>1TB of secure storage</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>discount code engine</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>unlimited product including apps intergrations</span>
-                                            </li>
-                                        </ul>
-                                        <div class="pricing-button ">
-                                            <a href="#" class="template-large-button">try its free 30 days</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="single-pricing-box">
-                                        <img src="assets/images/pricing-flower.png" class="pricing-flower" alt="flower">
-                                        <div class="pricing-box-top d-flex align-items-center">
-                                            <div class="pricing-top-icon mr-3">
-                                                <i class="fa fa-smile-o"></i>
-                                            </div>
-                                            <div class="pricing-top-title">
-                                                <h6 class="title">individual</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="title">ultimate</h3>
-                                        <div class="pricing-amount">
-                                            $999 <span class="amount-opacity">/ year</span>
-                                        </div>
-                                        <ul class="pricing-list">
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>1TB of secure storage</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>discount code engine</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>unlimited product including apps intergrations</span>
-                                            </li>
-                                        </ul>
-                                        <div class="pricing-button ">
-                                            <a href="#" class="template-large-button">try its free 30 days</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-second-content hidden-item">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="single-pricing-box active">
-                                        <img src="assets/images/pricing-flower.png" class="pricing-flower" alt="flower">
-                                        <div class="pricing-box-top d-flex align-items-center">
-                                            <div class="pricing-top-icon mr-3">
-                                                <i class="fa fa-smile-o"></i>
-                                            </div>
-                                            <div class="pricing-top-title">
-                                                <h6 class="title">individual</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="title">platinum</h3>
-                                        <div class="pricing-amount">
-                                            $120 <span class="amount-opacity">/ year</span>
-                                        </div>
-                                        <ul class="pricing-list">
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>1TB of secure storage</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>discount code engine</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>unlimited product including apps intergrations</span>
-                                            </li>
-                                        </ul>
-                                        <div class="pricing-button ">
-                                            <a href="#" class="template-large-button">try its free 30 days</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="single-pricing-box">
-                                        <img src="assets/images/pricing-flower.png" class="pricing-flower" alt="flower">
-                                        <div class="pricing-box-top d-flex align-items-center">
-                                            <div class="pricing-top-icon mr-3">
-                                                <i class="fa fa-smile-o"></i>
-                                            </div>
-                                            <div class="pricing-top-title">
-                                                <h6 class="title">individual</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="title">gold</h3>
-                                        <div class="pricing-amount">
-                                            $399 <span class="amount-opacity">/ year</span>
-                                        </div>
-                                        <ul class="pricing-list">
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>1TB of secure storage</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>discount code engine</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>unlimited product including apps intergrations</span>
-                                            </li>
-                                        </ul>
-                                        <div class="pricing-button ">
-                                            <a href="#" class="template-large-button">try its free 30 days</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="single-pricing-box">
-                                        <img src="assets/images/pricing-flower.png" class="pricing-flower" alt="flower">
-                                        <div class="pricing-box-top d-flex align-items-center">
-                                            <div class="pricing-top-icon mr-3">
-                                                <i class="fa fa-smile-o"></i>
-                                            </div>
-                                            <div class="pricing-top-title">
-                                                <h6 class="title">individual</h6>
-                                            </div>
-                                        </div>
-                                        <h3 class="title">dimond</h3>
-                                        <div class="pricing-amount">
-                                            $999 <span class="amount-opacity">/ year</span>
-                                        </div>
-                                        <ul class="pricing-list">
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>1TB of secure storage</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>discount code engine</span> 
-                                            </li>
-                                            <li class="d-flex align-items-start">
-                                                <img src="assets/images/pricing-icon.png" alt="icon"> 
-                                                <span>unlimited product including apps intergrations</span>
-                                            </li>
-                                        </ul>
-                                        <div class="pricing-button ">
-                                            <a href="#" class="template-large-button">try its free 30 days</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Strategy Section Starts -->
-        <section class="cropium-strategy-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".1s">
-                        <div class="section-title text-center">
-                            <span class="title-top"><i class="fa fa-smile-o"></i> our strategy</span>
-                            <h2 class="title">main <span>principles.</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Strategy left Starts -->
-                    <div class="col-lg-4 align-self-center">
-                        <div class="strategy-left-part">
-                            <img src="assets/images/strategy-blue-shape.png" alt="shape">
-                            <div class="strategy-single-box single-box-1">
-                                <div class="single-box-icon">
-                                    <i class="fa fa-user-o"></i>
-                                </div>
-                                <div class="single-box-content">
-                                    <div class="counter-number">
-                                        <h3 class="title">digital analysis</h3>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, minima?</p>
-                                </div>
-                            </div>
-                            <div class="strategy-single-box single-box-2">
-                                <div class="single-box-icon">
-                                    <i class="fa fa-pencil-square-o"></i>
-                                </div>
-                                <div class="single-box-content">
-                                    <div class="counter-number">
-                                        <h3 class="title">product creating</h3>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, minima?</p>
-                                </div>
-                            </div>
-                            <div class="strategy-single-box single-box-3">
-                                <div class="single-box-icon">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <div class="single-box-content">
-                                    <div class="counter-number">
-                                        <h3 class="title">digital analysis</h3>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, minima?</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Strategy Video Starts -->
-                    <div class="col-lg-4">
-                        <div class="strategy-video-part">
-                            <div class="video-play-button">
-                                <a href="https://www.youtube.com/watch?v=bJ3RJlmGn6k" class="button-video">
-                                    <i class="fa fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Strategy Right Starts -->
-                    <div class="col-lg-4 align-self-center">
-                        <div class="strategy-right-part">
-                            <img src="assets/images/strategy-yellow-shape.png" alt="shape">
-                            <div class="strategy-single-box single-box-4">
-                                <div class="single-box-icon">
-                                    <i class="fa fa-smile-o"></i>
-                                </div>
-                                <div class="single-box-content">
-                                    <div class="counter-number">
-                                        <h3 class="title">find new ideas</h3>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, minima?</p>
-                                </div>
-                            </div>
-                            <div class="strategy-single-box single-box-5">
-                                <div class="single-box-icon">
-                                    <i class="fa fa-pencil-square-o"></i>
-                                </div>
-                                <div class="single-box-content">
-                                    <div class="counter-number">
-                                        <h3 class="title">marketing research</h3>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, minima?</p>
-                                </div>
-                            </div>
-                            <div class="strategy-single-box single-box-6">
-                                <div class="single-box-icon">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <div class="single-box-content">
-                                    <div class="counter-number">
-                                        <h3 class="title">product creating</h3>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, minima?</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team Section Starts -->
-        <section class="cropium-team-section padding-top-115">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".1s">
-                        <div class="section-title text-center">
-                            <span class="title-top"><i class="fa fa-user"></i> our team member</span>
-                            <h2 class="title">our dedicated <span>team.</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="cropium-team-member">
-                            <div class="team-member-image">
-                                <img src="assets/images/team-member-1.jpg" alt="">
-                                <div class="hover-state hover-state-1">
-                                    <div class="team-member-content">
-                                        <span>CEO Founder</span>
-                                        <h4 class="title">john doe</h4>
-                                    </div>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="cropium-team-member">
-                            <div class="team-member-image">
-                                <img src="assets/images/team-member-2.jpg" alt="">
-                                <div class="hover-state hover-state-2">
-                                    <div class="team-member-content">
-                                        <span>wordPress developer</span>
-                                        <h4 class="title">devid walter</h4>
-                                    </div>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="cropium-team-member">
-                            <div class="team-member-image">
-                                <img src="assets/images/team-member-3.jpg" alt="">
-                                <div class="hover-state hover-state-3">
-                                    <div class="team-member-content">
-                                        <span>UX engineer</span>
-                                        <h4 class="title">olivia lopez</h4>
-                                    </div>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="cropium-team-member">
-                            <div class="team-member-image">
-                                <img src="assets/images/team-member-4.jpg" alt="">
-                                <div class="hover-state hover-state-4">
-                                    <div class="team-member-content">
-                                        <span>SEO specialist</span>
-                                        <h4 class="title">jessica stark</h4>
-                                    </div>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="cropium-team-member">
-                            <div class="team-member-image">
-                                <img src="assets/images/team-member-5.jpg" alt="">
-                                <div class="hover-state hover-state-1">
-                                    <div class="team-member-content">
-                                        <span>wordPress developer</span>
-                                        <h4 class="title">john doe</h4>
-                                    </div>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="cropium-team-member">
-                            <div class="team-member-image">
-                                <img src="assets/images/team-member-6.jpg" alt="">
-                                <div class="hover-state hover-state-2">
-                                    <div class="team-member-content">
-                                        <span>wordPress developer</span>
-                                        <h4 class="title">jessica stark</h4>
-                                    </div>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="cropium-team-member">
-                            <div class="team-member-image">
-                                <img src="assets/images/team-member-7.jpg" alt="">
-                                <div class="hover-state hover-state-3">
-                                    <div class="team-member-content">
-                                        <span>UX engineer</span>
-                                        <h4 class="title">olivia lopez</h4>
-                                    </div>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="cropium-team-member">
-                            <div class="team-member-image">
-                                <img src="assets/images/team-member-8.jpg" alt="">
-                                <div class="hover-state hover-state-4">
-                                    <div class="team-member-content">
-                                        <span>SEO specialist</span>
-                                        <h4 class="title">devid walter</h4>
-                                    </div>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SpeedUp Section Starts -->
-        <section class="cropium-speedup-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="speedup-image">
-                            <img src="assets/images/speedup-image.png" class="speedup-main-image" alt="image">
-                            <img src="assets/images/speedup-1.png" class="speedup-image-1" alt="image">
-                            <img src="assets/images/speedup-2.png" class="speedup-image-2" alt="image">
-                            <img src="assets/images/speedup-3.png" class="speedup-image-3" alt="image">
-                            <img src="assets/images/speedup-4.png" class="speedup-image-4" alt="image">
-                        </div>
-                    </div>
-                    <div class="col-xl-5 offset-xl-1 col-lg-6 align-self-center">
-                        <div class="section-title">
-                            <span class="title-top"><i class="fa fa-cogs"></i> speed up</span>
-                            <h2 class="title">speed up works <span>process.</span></h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque perferendis alias quam est! Ipsa, necessitatibus soluta!</p>
-                        </div>
-                        <div class="speedup-progressbar">
-                            <div class="dm">
-                                <h5 class="title">digital marketing</h5>
-                                <div id="dm"></div>
-                            </div>
-                            <div class="fs">
-                                <h5 class="title">financial services</h5>
-                                <div id="fs"></div>
-                            </div>
-                            <div class="con">
-                                <h5 class="title">consulting</h5>
-                                <div id="con"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Client Section Starts -->
-        <section class="cropium-client-section padding-top-115 padding-bottom-120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <span class="title-top"><i class="fa fa-cogs"></i> client feedback</span>
-                            <h2 class="title">our happy <span>client.</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="client-slider">
-                    <div class="client-single-slide d-md-flex">
-                        <div class="single-slide-image">
-                            <img src="assets/images/client-1.jpg" alt="client">
-                        </div>
-                        <div class="single-slide-content">
-                            <span class="reviewer-text">We are Working Bustle Chances are good that there’s a cloud software as a service solution on the market today that will serve your core back-office need expertise and genuine passion.</span>
-                            <div class="reviewer-info">
-                                <h4 class="title">john doe</h4>
-                                <span>CEO Facebook</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="client-single-slide d-md-flex">
-                        <div class="single-slide-image">
-                            <img src="assets/images/client-2.jpg" alt="client">
-                        </div>
-                        <div class="single-slide-content">
-                            <span class="reviewer-text">Lorem ipsum dolor sit Chances are good that there’s a cloud software as a service solution on the market today that will serve your core back-office need expertise and genuine passion.</span>
-                            <div class="reviewer-info">
-                                <h4 class="title">adam jampa</h4>
-                                <span>CEO Google</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blog Section Starts -->
-        <section class="cropium-blog-section padding-115">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".1s">
-                        <div class="section-title text-center">
-                            <span class="title-top"><i class="fa fa-paper-plane"></i> news & blog</span>
-                            <h2 class="title">our latest <span>blog.</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-slider">
-                    <div class="blog-single-slide">
-                        <div class="single-slide-image">
-                            <img src="assets/images/blog-1.jpg" alt="blog">
-                            <div class="blog-date date-1">
-                                <h5 class="title">28</h5>
-                                <span>july</span>                               
-                            </div>
-                        </div>
-                        <div class="single-slide-content">
-                            <h4 class="title"><a href="blog.html">Digital Agency service focus on Providing actionable.</a></h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi laboriosam dignissimos tempore?</p>
-                            <a href="blog.html" class="blog-button">read more <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-single-slide">
-                        <div class="single-slide-image">
-                            <img src="assets/images/blog-2.jpg" alt="blog">
-                            <div class="blog-date date-2">
-                                <h5 class="title">15</h5>
-                                <span>may</span>                               
-                            </div>
-                        </div>
-                        <div class="single-slide-content">
-                            <h4 class="title"><a href="blog.html">Data Analytics in Finance Strategy.</a></h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi laboriosam dignissimos tempore?</p>
-                            <a href="blog.html" class="blog-button">read more <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-single-slide">
-                        <div class="single-slide-image">
-                            <img src="assets/images/blog-3.jpg" alt="blog">
-                            <div class="blog-date date-3">
-                                <h5 class="title">08</h5>
-                                <span>aug</span>                               
-                            </div>
-                        </div>
-                        <div class="single-slide-content">
-                            <h4 class="title"><a href="blog.html">The Coronavirus Crisis and Leadership in Business.</a></h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi laboriosam dignissimos tempore?</p>
-                            <a href="blog.html" class="blog-button">read more <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="blog-single-slide">
-                        <div class="single-slide-image">
-                            <img src="assets/images/blog-2.jpg" alt="blog">
-                            <div class="blog-date date-2">
-                                <h5 class="title">08</h5>
-                                <span>aug</span>                               
-                            </div>
-                        </div>
-                        <div class="single-slide-content">
-                            <h4 class="title"><a href="blog.html">how to create a perfect website.</a></h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi laboriosam dignissimos tempore?</p>
-                            <a href="blog.html" class="blog-button">read more <i class="fa fa-caret-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section Starts -->
-        <section class="cropium-cta-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="cta-content padding-80 text-center">
-                            <div class="cta-title">
-                                <h2 class="title">ready to use the smartest design tool?</h2>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, ipsa.</p>
-                            <div class="cta-content-button">
-                                <a href="#" class="template-large-button">try its free 30 days</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer Section Starts -->
-        <footer class="footer-section common-footer">
-            <div class="footer-widget-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer-widget">
-                                <div class="widget-title">
-                                    <h4 class="title">about us</h4>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quas, porro nisi ullam saepe harum exercitationem sapiente nostrum.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer-widget">
-                                <div class="widget-title">
-                                    <h4 class="title">our services</h4>
-                                </div>
-                                <ul>
-                                    <li><a href="#">web page design</a></li>
-                                    <li><a href="#">IOS aplication</a></li>
-                                    <li><a href="#">UX research</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer-widget">
-                                <div class="widget-title">
-                                    <h4 class="title">useful links</h4>
-                                </div>
-                                <ul>
-                                    <li><a href="#">our blog</a></li>
-                                    <li><a href="#">case study</a></li>
-                                    <li><a href="#">legal info</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="footer-widget">
-                                <div class="widget-title">
-                                    <h4 class="title">Subscribe Us</h4>
-                                </div>
-                                <form action="#">
-                                    <input type="email" placeholder="Email" class="input-shape">
-                                    <button type="submit"><i class="fa fa-paper-plane"></i></button>
-                                </form>
-                                <p>Vestibulum commo sapien non elit porttitor, vitae volutpat nibh mollis.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
-                                <span>Copyright &copy; 2021.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 align-self-center">
-                            <div class="footer-contact">
-                                <div class="footer-content-right d-flex">
-                                    <i class="fa fa-headphones"></i>
-                                    <h3 class="title">123 - 456789</h3>
-                                </div>
-                                <div class="footer-social-link">
-                                    <ul>
-                                        <li class="facebook-icon"><a href="$"><i class="fa fa-facebook-square"></i></a></li>
-                                        <li class="twitter-icon"><a href="$"><i class="fa fa-twitter-square"></i></a></li>
-                                        <li class="linkedin-icon"><a href="$"><i class="fa fa-linkedin-square"></i></a></li>
-                                        <li class="instagram-icon"><a href="$"><i class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+					<!--/search-right-->
+					<!--/search-right-->
+					<div class="search-right">
+						<a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">Search <span
+								class="fa fa-search ml-3" aria-hidden="true"></span></a>
+						<!-- search popup -->
+						<div id="search" class="pop-overlay">
+							<div class="popup">
+								<form action="#" method="post" class="search-box">
+									<input type="search" placeholder="Search your Keyword" name="search"
+										required="required" autofocus="">
+									<button type="submit" class="btn"><span class="fa fa-search"
+											aria-hidden="true"></span></button>
+								</form>
+								<div class="browse-items">
+									<h3 class="hny-title two mt-md-5 mt-4">Browse all:</h3>
+									<ul class="search-items">
+										<li><a href="genre.html">Action</a></li>
+										<li><a href="genre.html">Drama</a></li>
+										<li><a href="genre.html">Family</a></li>
+										<li><a href="genre.html">Thriller</a></li>
+										<li><a href="genre.html">Commedy</a></li>
+										<li><a href="genre.html">Romantic</a></li>
+										<li><a href="genre.html">Tv-Series</a></li>
+										<li><a href="genre.html">Horror</a></li>
+										<li><a href="genre.html">Action</a></li>
+										<li><a href="genre.html">Drama</a></li>
+										<li><a href="genre.html">Family</a></li>
+										<li><a href="genre.html">Thriller</a></li>
+										<li><a href="genre.html">Commedy</a></li>
+										<li><a href="genre.html">Romantic</a></li>
+										<li><a href="genre.html">Tv-Series</a></li>
+										<li><a href="genre.html">Horror</a></li>
+									</ul>
+								</div>
+							</div>
+							<a class="close" href="#close">×</a>
+						</div>
+						<!-- /search popup -->
+						<!--/search-right-->
+					</div>
 
 
-        <!-- Javascript Files -->
-        <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-        <script src="assets/js/vendor/slick.min.js"></script>
-        <script src="assets/js/vendor/counterup.min.js"></script>
-        <script src="assets/js/vendor/waypoints.min.js"></script>
-        <script src="assets/js/vendor/jquery.magnific-popup.js"></script>
-        <script src="assets/js/vendor/jquery.lineProgressbar.js"></script>
-        <script src="assets/js/vendor/lineProgressbarActivate.js"></script>
-        <script src="assets/js/vendor/easing.min.js"></script>
-        <script src="assets/js/vendor/wow.min.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+				</div>
+				<!-- toggle switch for light and dark theme -->
+				<div class="mobile-position">
+					<nav class="navigation">
+						<div class="theme-switch-wrapper">
+							<label class="theme-switch" for="checkbox">
+								<input type="checkbox" id="checkbox">
+								<div class="mode-container">
+									<i class="gg-sun"></i>
+									<i class="gg-moon"></i>
+								</div>
+							</label>
+						</div>
+					</nav>
+				</div>
+				<!-- //toggle switch for light and dark theme -->
+			</div>
+		</nav>
+		<!--//nav-->
+	</header>
+	<!-- //header -->
+	<!-- main-slider -->
+	<section class="w3l-main-slider position-relative" id="home">
+		<div class="companies20-content">
+			<div class="owl-one owl-carousel owl-theme">
+				<div class="item">
+					<li>
+						<div class="slider-info banner-view bg bg2">
+							<div class="banner-info">
+								<h3>Latest Movie Trailers</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="over-para"> Consequuntur hic odio
+									voluptatem tenetur consequatur.</span></p>
+								<a href="#small-dialog1" class="popup-with-zoom-anim play-view1">
+									<span class="video-play-icon">
+										<span class="fa fa-play"></span>
+									</span>
+									<h6>Watch Trailer</h6>
+								</a>
+								<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+								<div id="small-dialog1" class="zoom-anim-dialog mfp-hide">
+									<iframe src="" allow="autoplay; fullscreen"
+										allowfullscreen=""></iframe>
+								</div>
+							</div>
+						</div>
+					</li>
+				</div>
+				<div class="item">
+					<li>
+						<div class="slider-info  banner-view banner-top1 bg bg2">
+							<div class="banner-info">
+								<h3>Latest Online Movies</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="over-para"> Consequuntur hic odio
+									voluptatem tenetur consequatur.</span></p>
+								<a href="#small-dialog2" class="popup-with-zoom-anim play-view1">
+									<span class="video-play-icon">
+										<span class="fa fa-play"></span>
+									</span>
+									<h6>Watch Trailer</h6>
+								</a>
+								<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+								<div id="small-dialog2" class="zoom-anim-dialog mfp-hide">
+									<iframe src="" allow="autoplay; fullscreen"
+										allowfullscreen=""></iframe>
+								</div>
+							</div>
+						</div>
+					</li>
+				</div>
+				<div class="item">
+					<li>
+						<div class="slider-info banner-view banner-top2 bg bg2">
+							<div class="banner-info">
+								<h3>Latest Movie Trailers</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="over-para"> Consequuntur hic odio
+									voluptatem tenetur consequatur.</span></p>
+								<a href="#small-dialog3" class="popup-with-zoom-anim play-view1">
+									<span class="video-play-icon">
+										<span class="fa fa-play"></span>
+									</span>
+									<h6>Watch Trailer</h6>
+								</a>
+								<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+								<div id="small-dialog3" class="zoom-anim-dialog mfp-hide">
+									<iframe src="" allow="autoplay; fullscreen"
+										allowfullscreen=""></iframe>
+								</div>
+							</div>
+						</div>
+					</li>
+				</div>
+				<div class="item">
+					<li>
+						<div class="slider-info banner-view banner-top3 bg bg2">
+							<div class="banner-info">
+								<h3>Latest Online Movies</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span class="over-para"> Consequuntur hic odio
+									voluptatem tenetur consequatur.</span></p>
+								<a href="#small-dialog4" class="popup-with-zoom-anim play-view1">
+									<span class="video-play-icon">
+										<span class="fa fa-play"></span>
+									</span>
+									<h6>Watch Trailer</h6>
+								</a>
+								<!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+								<div id="small-dialog4" class="zoom-anim-dialog mfp-hide">
+									<iframe src="" allow="autoplay; fullscreen"
+										allowfullscreen=""></iframe>
+								</div>
+							</div>
+						</div>
+					</li>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //banner-slider-->
+	<!-- main-slider -->
+	<!--grids-sec1-->
+	<section class="w3l-grids">
+		<div class="grids-main py-5">
+			<div class="container py-lg-3">
+				<div class="headerhny-title">
+					<div class="w3l-title-grids">
+						<div class="headerhny-left">
+							<h3 class="hny-title">Popular Movies</h3>
+						</div>
+						<div class="headerhny-right text-lg-right">
+							<h4><a class="show-title" href="genre.html">Show all</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="w3l-populohny-grids">
+					<div class="item vhny-grid">
+						<div class="box16">
+							<a href="genre.html">
+								<figure>
+									<img class="img-fluid" src="assets/images/m7.jpg" alt="">
+								</figure>
+								<div class="box-content">
+									<h3 class="title">Frozen 2</h3>
+									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 1 Hr 4min
+
+										</span>
+
+										<span class="post fa fa-heart text-right"></span>
+									</h4>
+								</div>
+								<span class="fa fa-play video-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+					</div>
+					<div class="item vhny-grid">
+						<div class="box16">
+							<a href="genre.html">
+								<figure>
+									<img class="img-fluid" src="assets/images/m3.jpg" alt="">
+								</figure>
+								<div class="box-content">
+									<h3 class="title">Knives Out</h3>
+									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 1 Hr 4min
+
+										</span>
+
+										<span class="post fa fa-heart text-right"></span>
+									</h4>
+								</div>
+								<span class="fa fa-play video-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+					</div>
+					<div class="item vhny-grid">
+						<div class="box16">
+							<a href="genre.html">
+								<figure>
+									<img class="img-fluid" src="assets/images/m4.jpg" alt="">
+								</figure>
+								<div class="box-content">
+									<h3 class="title">Little Women</h3>
+									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 1 Hr 4min
+
+										</span>
+
+										<span class="post fa fa-heart text-right"></span>
+									</h4>
+								</div>
+								<span class="fa fa-play video-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+					</div>
+					<div class="item vhny-grid">
+						<div class="box16">
+							<a href="genre.html">
+								<figure>
+									<img class="img-fluid" src="assets/images/m5.jpg" alt="">
+								</figure>
+								<div class="box-content">
+									<h3 class="title">Jumanji</h3>
+									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 1 Hr 4min
+
+										</span>
+
+										<span class="post fa fa-heart text-right"></span>
+									</h4>
+								</div>
+								<span class="fa fa-play video-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--//grids-sec1-->
+	<!--grids-sec2-->
+	<section class="w3l-grids">
+		<div class="grids-main py-5">
+			<div class="container py-lg-3">
+				<div class="headerhny-title">
+					<div class="w3l-title-grids">
+						<div class="headerhny-left">
+							<h3 class="hny-title">New Releases</h3>
+						</div>
+						<div class="headerhny-right text-lg-right">
+							<h4><a class="show-title" href="genre.html">Show all</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="owl-three owl-carousel owl-theme">
+					<div class="item vhny-grid">
+						<div class="box16 mb-0">
+							<a href="genre.html">
+								<figure>
+									<img class="img-fluid" src="assets/images/n1.jpg" alt="">
+								</figure>
+								<div class="box-content">
+									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+										</span>
+
+										<span class="post fa fa-heart text-right"></span>
+									</h4>
+								</div>
+								<span class="fa fa-play video-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+						<h3> <a class="title-gd" href="genre.html">No Time to Die</a></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+						<div class="button-center text-center mt-4">
+							<a href="genre.html" class="btn watch-button">Watch now</a>
+						</div>
+
+					</div>
+					<div class="item vhny-grid">
+						<div class="box16 mb-0">
+							<a href="genre.html">
+								<figure>
+									<img class="img-fluid" src="assets/images/n2.jpg" alt="">
+								</figure>
+								<div class="box-content">
+
+									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+										</span>
+
+										<span class="post fa fa-heart text-right"></span>
+									</h4>
+								</div>
+								<span class="fa fa-play video-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+						<h3> <a class="title-gd" href="genre.html">Mulan</a></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+						<div class="button-center text-center mt-4">
+							<a href="genre.html" class="btn watch-button">Watch now</a>
+						</div>
+					</div>
+					<div class="item vhny-grid">
+						<div class="box16 mb-0">
+							<a href="genre.html">
+								<figure>
+									<img class="img-fluid" src="assets/images/n3.jpg" alt="">
+								</figure>
+								<div class="box-content">
+
+									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+										</span>
+
+										<span class="post fa fa-heart text-right"></span>
+									</h4>
+								</div>
+								<span class="fa fa-play video-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+						<h3> <a class="title-gd" href="genre.html">Free Guy</a></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+						<div class="button-center text-center mt-4">
+							<a href="genre.html" class="btn watch-button">Watch now</a>
+						</div>
+					</div>
+					<div class="item vhny-grid">
+						<div class="box16 mb-0">
+							<a href="genre.html">
+								<figure>
+									<img class="img-fluid" src="assets/images/n4.jpg" alt="">
+								</figure>
+								<div class="box-content">
+
+									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+										</span>
+
+										<span class="post fa fa-heart text-right"></span>
+									</h4>
+								</div>
+								<span class="fa fa-play video-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+						<h3> <a class="title-gd" href="genre.html">My Spy</a></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+						<div class="button-center text-center mt-4">
+							<a href="genre.html" class="btn watch-button">Watch now</a>
+						</div>
+
+					</div>
+					<div class="item vhny-grid">
+						<div class="box16 mb-0">
+							<a href="genre.html">
+								<figure>
+									<img class="img-fluid" src="assets/images/n5.jpg" alt="">
+								</figure>
+								<div class="box-content">
+
+									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+										</span>
+
+										<span class="post fa fa-heart text-right"></span>
+									</h4>
+								</div>
+								<span class="fa fa-play video-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+						<h3> <a class="title-gd" href="genre.html">Scoob</a></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+						<div class="button-center text-center mt-4">
+							<a href="genre.html" class="btn watch-button">Watch now</a>
+						</div>
+					</div>
+					<div class="item vhny-grid">
+						<div class="box16 mb-0">
+							<a href="genre.html">
+								<figure>
+									<img class="img-fluid" src="assets/images/n6.jpg" alt="">
+								</figure>
+								<div class="box-content">
+
+									<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+										</span>
+
+										<span class="post fa fa-heart text-right"></span>
+									</h4>
+								</div>
+								<span class="fa fa-play video-icon" aria-hidden="true"></span>
+							</a>
+						</div>
+						<h3> <a class="title-gd" href="genre.html">Downhill</a></h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+						<div class="button-center text-center mt-4">
+							<a href="genre.html" class="btn watch-button">Watch now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!--grids-sec2-->
+	<!--mid-slider -->
+	<section class="w3l-mid-slider position-relative">
+		<div class="companies20-content">
+			<div class="owl-mid owl-carousel owl-theme">
+				<div class="item">
+					<li>
+						<div class="slider-info mid-view bg bg2">
+							<div class="container">
+								<div class="mid-info">
+									<span class="sub-text">Comedy</span>
+									<h3>Jumanji: The Next Level</h3>
+									<p>2019 ‧ Comedy/Action ‧ 2h 3m</p>
+									<a class="watch" href="genre.html"><span class="fa fa-play"
+											aria-hidden="true"></span>
+										Watch Trailer</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</div>
+				<div class="item">
+					<li>
+						<div class="slider-info mid-view mid-top1 bg bg2">
+							<div class="container">
+								<div class="mid-info">
+									<span class="sub-text">Adventure</span>
+									<h3>Dolittle</h3>
+									<p>2020 ‧ Family/Adventure ‧ 1h 41m</p>
+									<a class="watch" href="genre.html"><span class="fa fa-play"
+											aria-hidden="true"></span>
+										Watch Trailer</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</div>
+				<div class="item">
+					<li>
+						<div class="slider-info mid-view mid-top2 bg bg2">
+							<div class="container">
+								<div class="mid-info">
+									<span class="sub-text">Action</span>
+									<h3>Bad Boys for Life</h3>
+									<p>2020 ‧ Comedy/Action ‧ 2h 4m</p>
+									<a class="watch" href="genre.html"><span class="fa fa-play"
+											aria-hidden="true"></span>
+										Watch Trailer</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //mid-slider-->
+	<!--/tabs-->
+	<section class="w3l-albums py-5" id="projects">
+		<div class="container py-lg-4">
+			<div class="row">
+				<div class="col-lg-12 mx-auto">
+					<!--Horizontal Tab-->
+					<div id="parentHorizontalTab">
+						<ul class="resp-tabs-list hor_1">
+							<li>Recent Movies</li>
+							<li>Popular Movies</li>
+							<li>Trend Movies</li>
+							<div class="clear"></div>
+						</ul>
+						<div class="resp-tabs-container hor_1">
+							<div class="albums-content">
+								<div class="row">
+									<!--/set1-->
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html">
+
+													<img src="assets/images/m6.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Long Shot</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m5.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Jumanji</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m4.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Little Women</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<!--//set1-->
+									<!--/set1-->
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m1.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Rocketman</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m2.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Doctor Sleep</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m3.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Knives Out</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<!--//set1-->
+									<!--/set1-->
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/n1.jpg" class="img-fluid"
+														alt="author image">
+													<span class="fa fa-play video-icon" aria-hidden="true"></span>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">No Time to Die</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/n2.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Mulan</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/n3.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Free Guy</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<!--//set1-->
+								</div>
+							</div>
+							<div class="albums-content">
+								<div class="row">
+									<!--/set1-->
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m1.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Rocketman</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m2.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Doctor Sleep</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m3.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Knives Out</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<!--//set1-->
+									<!--/set2-->
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m7.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Frozen 2</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m8.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Toy Story 4</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m9.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Joker</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<!--//set2-->
+								</div>
+							</div>
+							<div class="albums-content">
+								<div class="row">
+									<!--/set3-->
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m7.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Frozen 2</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m8.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Toy Story 4</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m9.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Joker</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<!--//set3-->
+									<!--/set3-->
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m10.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">Alita</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m11.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">The Lego</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-lg-4 new-relise-gd mt-lg-0 mt-0">
+										<div class="slider-info">
+											<div class="img-circle">
+												<a href="genre.html"><img src="assets/images/m12.jpg" class="img-fluid"
+														alt="author image">
+													<div class="overlay-icon">
+
+														<span class="fa fa-play video-icon" aria-hidden="true"></span>
+													</div>
+												</a>
+											</div>
+											<div class="message">
+												<p>English</p>
+												<a class="author-book-title" href="genre.html">The Hustle</a>
+												<h4> <span class="post"><span class="fa fa-clock-o"> </span> 2 Hr 4min
+
+													</span>
+
+													<span class="post fa fa-heart text-right"></span>
+												</h4>
+											</div>
+										</div>
+
+									</div>
+									<!--//set3-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //tabs-->
+	<!-- footer-66 -->
+	<footer class="w3l-footer">
+		<section class="footer-inner-main">
+			<div class="footer-hny-grids py-5">
+				<div class="container py-lg-4">
+					<div class="text-txt">
+						<div class="right-side">
+							<div class="row footer-about">
+								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
+									<a href="genre.html"><img class="img-fluid" src="assets/images/banner1.jpg"
+											alt=""></a>
+								</div>
+								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
+									<a href="genre.html"><img class="img-fluid" src="assets/images/banner2.jpg"
+											alt=""></a>
+								</div>
+								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
+									<a href="genre.html"><img class="img-fluid" src="assets/images/banner3.jpg"
+											alt=""></a>
+								</div>
+								<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
+									<a href="genre.html"><img class="img-fluid" src="assets/images/banner4.jpg"
+											alt=""></a>
+								</div>
+							</div>
+							<div class="row footer-links">
+
+
+								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
+									<h6>Movies</h6>
+									<ul>
+										<li><a href="#">Movies</a></li>
+										<li><a href="#">Videos</a></li>
+										<li><a href="#">English Movies</a></li>
+										<li><a href="#">Tailor</a></li>
+										<li><a href="#">Upcoming Movies</a></li>
+										<li><a href="contact.html">Contact Us</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
+									<h6>Information</h6>
+									<ul>
+										<li><a href="index.html">Home</a> </li>
+										<li><a href="about.html">About</a> </li>
+										<li><a href="#">Tv Series</a> </li>
+										<li><a href="#">Blogs</a> </li>
+										<li><a href="#">Login</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
+									<h6>Locations</h6>
+									<ul>
+										<li><a href="genre.html">Asia</a></li>
+										<li><a href="genre.html">France</a></li>
+										<li><a href="genre.html">Taiwan</a></li>
+										<li><a href="genre.html">United States</a></li>
+										<li><a href="genre.html">Korea</a></li>
+										<li><a href="genre.html">United Kingdom</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3 col-sm-6 sub-two-right mt-5">
+									<h6>Newsletter</h6>
+									<form action="#" class="subscribe mb-3" method="post">
+										<input type="email" name="email" placeholder="Your Email Address" required="">
+										<button><span class="fa fa-envelope-o"></span></button>
+									</form>
+									<p>Enter your email and receive the latest news, updates and special offers from us.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="below-section">
+				<div class="container">
+					<div class="copyright-footer">
+						<div class="columns text-lg-left">
+							<p>Copyright &copy; 2020.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+						</div>
+
+						<ul class="social text-lg-right">
+							<li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+							</li>
+							<li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+							</li>
+							<li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+							</li>
+							<li><a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- copyright -->
+			<!-- move top -->
+			<button onclick="topFunction()" id="movetop" title="Go to top">
+				<span class="fa fa-arrow-up" aria-hidden="true"></span>
+			</button>
+			<script>
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function () {
+					scrollFunction()
+				};
+
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						document.getElementById("movetop").style.display = "block";
+					} else {
+						document.getElementById("movetop").style.display = "none";
+					}
+				}
+
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+				}
+			</script>
+			<!-- /move top -->
+
+		</section>
+	</footer>
+	<!--//footer-66 -->
+</body>
+
 </html>
+<!-- responsive tabs -->
+<script src="assets/js/jquery-1.9.1.min.js"></script>
+  <script src="assets/js/easyResponsiveTabs.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //Horizontal Tab
+      $('#parentHorizontalTab').easyResponsiveTabs({
+        type: 'default', //Types: default, vertical, accordion
+        width: 'auto', //auto or any width like 600px
+        fit: true, // 100% fit in a container
+        tabidentify: 'hor_1', // The tab groups identifier
+        activate: function (event) { // Callback function if tab is switched
+          var $tab = $(this);
+          var $info = $('#nested-tabInfo');
+          var $name = $('span', $info);
+          $name.text($tab.text());
+          $info.show();
+        }
+      });
+    });
+  </script>  
+<!-- //responsive tabs -->
+<!--/theme-change-->
+<script src="assets/js/theme-change.js"></script>
+<!-- //theme-change-->
+<script src="assets/js/owl.carousel.js"></script>
+<!-- script for banner slider-->
+<script>
+	$(document).ready(function () {
+		$('.owl-one').owlCarousel({
+			stagePadding:280,
+			loop: true,
+			margin: 20,
+			nav: true,
+			responsiveClass: true,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			autoplaySpeed: 1000,
+			autoplayHoverPause: false,
+			responsive: {
+				0: {
+					items: 1,
+					stagePadding:40,
+					nav: false
+				},
+				480: {
+					items: 1,
+					stagePadding:60,
+					nav: true
+				},
+				667: {
+					items: 1,
+					stagePadding:80,
+					nav: true
+				},
+				1000: {
+					items: 1,
+					nav: true
+				}
+			}
+		})
+	})
+</script>
+<!-- //script -->
+<script>
+	$(document).ready(function () {
+		$('.owl-three').owlCarousel({
+			loop: true,
+			margin: 20,
+			nav: false,
+			responsiveClass: true,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			autoplaySpeed: 1000,
+			autoplayHoverPause: false,
+			responsive: {
+				0: {
+					items: 2,
+					nav: false
+				},
+				480: {
+					items: 2,
+					nav: true
+				},
+				667: {
+					items: 3,
+					nav: true
+				},
+				1000: {
+					items: 5,
+					nav: true
+				}
+			}
+		})
+	})
+</script>
+<!-- //script -->
+<!-- /mid-script -->
+<script>
+	$(document).ready(function () {
+		$('.owl-mid').owlCarousel({
+			loop: true,
+			margin: 0,
+			nav: false,
+			responsiveClass: true,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			autoplaySpeed: 1000,
+			autoplayHoverPause: false,
+			responsive: {
+				0: {
+					items: 1,
+					nav: false
+				},
+				480: {
+					items: 1,
+					nav: false
+				},
+				667: {
+					items: 1,
+					nav: true
+				},
+				1000: {
+					items: 1,
+					nav: true
+				}
+			}
+		})
+	})
+</script>
+<!-- //mid-script -->
+
+<!-- script for owlcarousel -->
+<!-- Template JavaScript -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('.popup-with-zoom-anim').magnificPopup({
+			type: 'inline',
+
+			fixedContentPos: false,
+			fixedBgPos: true,
+
+			overflowY: 'auto',
+
+			closeBtnInside: true,
+			preloader: false,
+
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-zoom-in'
+		});
+
+		$('.popup-with-move-anim').magnificPopup({
+			type: 'inline',
+
+			fixedContentPos: false,
+			fixedBgPos: true,
+
+			overflowY: 'auto',
+
+			closeBtnInside: true,
+			preloader: false,
+
+			midClick: true,
+			removalDelay: 300,
+			mainClass: 'my-mfp-slide-bottom'
+		});
+	});
+</script>
+<!--//-->
+<!-- disable body scroll which navbar is in active -->
+<script>
+	$(function () {
+		$('.navbar-toggler').click(function () {
+			$('body').toggleClass('noscroll');
+		})
+	});
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+	$(window).on("scroll", function () {
+		var scroll = $(window).scrollTop();
+
+		if (scroll >= 80) {
+			$("#site-header").addClass("nav-fixed");
+		} else {
+			$("#site-header").removeClass("nav-fixed");
+		}
+	});
+
+	//Main navigation Active Class Add Remove
+	$(".navbar-toggler").on("click", function () {
+		$("header").toggleClass("active");
+	});
+	$(document).on("ready", function () {
+		if ($(window).width() > 991) {
+			$("header").removeClass("active");
+		}
+		$(window).on("resize", function () {
+			if ($(window).width() > 991) {
+				$("header").removeClass("active");
+			}
+		});
+	});
+</script>
+<!--//MENU-JS-->
+
+<script src="assets/js/bootstrap.min.js"></script>
