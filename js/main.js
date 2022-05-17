@@ -23,7 +23,7 @@
 	
 	// 01. PreLoader Js
 	$(window).on('load',function() {
-		$("#loading").fadeOut(2000);
+		$("#loading").fadeOut(1000);
 	});
 	
 	// Full Height
