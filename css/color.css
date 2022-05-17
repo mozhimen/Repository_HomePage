@@ -1,0 +1,18 @@
+
+/* template-color */
+
+.experience-block-one .inner-box:hover .image-box .category{
+  background: #D5D5D5;
+}
+
+.experience-block-one .inner-box .image-box i{
+  color: #D5D5D5;
+}
+
+.experience-block-one .inner-box .lower-content h3 a:hover{
+  color: #D5D5D5;
+}
+
+.experience-block-one .inner-box .lower-content .link a:hover{
+  color: #D5D5D5;
+}
