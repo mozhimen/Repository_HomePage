@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "ali-icons";
+	src: url("../fonts/ali-icons.woff2") format("woff2"),
+		url("../fonts/ali-icons.woff") format("woff"),
+		url("../fonts/ali-icons.ttf") format("truetype");
+}
+
+.ali-icons {
+	font-family: "ali-icons";
+	font-size: normal;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ali-github:before {
+	content: "\ecb5";
+}
+.ali-juejin:before {
+	content: "\e60d";
+}
+.ali-maimai:before {
+	content: "\e6b4";
+}
+.ali-casn:before {
+	content: "\e63c";
+}

@@ -2241,92 +2241,15 @@ hr {
 
 
 /* Animations for Skills Progress Bar */
-
-.bar-fill-c {
-	width: 80%;
-	background-color: #101010;
-	animation: bar-fill-c 2s ease-out;
-	-moz-animation: bar-fill-c 2s ease-out;
-	-webkit-animation: bar-fill-c 2s ease-out;
-}
-
-@keyframes bar-fill-c {
-	0% {
-		width: 0px;
-	}
-
-	100% {
-		width: 80%;
-	}
-}
-
-@-moz-keyframes bar-fill-c {
-	0% {
-		width: 0px;
-	}
-
-	100% {
-		width: 80%;
-	}
-}
-
-@-webkit-keyframes bar-fill-c {
-	0% {
-		width: 0px;
-	}
-
-	100% {
-		width: 80%;
-	}
-}
-
-.bar-fill-android {
-	width: 80%;
-	background-color: #101010;
-	animation: bar-fill-android 2s ease-out;
-	-moz-animation: bar-fill-android 2s ease-out;
-	-webkit-animation: bar-fill-android 2s ease-out;
-}
-
-@keyframes bar-fill-android {
-	0% {
-		width: 0px;
-	}
-
-	100% {
-		width: 80%;
-	}
-}
-
-@-moz-keyframes bar-fill-android {
-	0% {
-		width: 0px;
-	}
-
-	100% {
-		width: 80%;
-	}
-}
-
-@-webkit-keyframes bar-fill-android {
-	0% {
-		width: 0px;
-	}
-
-	100% {
-		width: 80%;
-	}
-}
-
-.bar-fill-net {
+.bar-fill-kotlin {
 	width: 90%;
 	background-color: #101010;
-	animation: bar-fill-net 2s ease-out;
-	-moz-animation: bar-fill-net 2s ease-out;
-	-webkit-animation: bar-fill-net 2s ease-out;
+	animation: bar-fill-kotlin 2s ease-out;
+	-moz-animation: bar-fill-kotlin 2s ease-out;
+	-webkit-animation: bar-fill-kotlin 2s ease-out;
 }
 
-@keyframes bar-fill-net {
+@keyframes bar-fill-kotlin {
 	0% {
 		width: 0px;
 	}
@@ -2336,7 +2259,7 @@ hr {
 	}
 }
 
-@-moz-keyframes bar-fill-net {
+@-moz-keyframes bar-fill-kotlin {
 	0% {
 		width: 0px;
 	}
@@ -2346,7 +2269,7 @@ hr {
 	}
 }
 
-@-webkit-keyframes bar-fill-net {
+@-webkit-keyframes bar-fill-kotlin {
 	0% {
 		width: 0px;
 	}
@@ -2357,7 +2280,7 @@ hr {
 }
 
 .bar-fill-java {
-	width: 85%;
+	width: 80%;
 	background-color: #101010;
 	animation: bar-fill-java 2s ease-out;
 	-moz-animation: bar-fill-java 2s ease-out;
@@ -2370,7 +2293,7 @@ hr {
 	}
 
 	100% {
-		width: 85%;
+		width: 80%;
 	}
 }
 
@@ -2380,7 +2303,7 @@ hr {
 	}
 
 	100% {
-		width: 85%;
+		width: 80%;
 	}
 }
 
@@ -2390,7 +2313,121 @@ hr {
 	}
 
 	100% {
-		width: 85%;
+		width: 80%;
+	}
+}
+
+.bar-fill-dart {
+	width: 60%;
+	background-color: #101010;
+	animation: bar-fill-dart 2s ease-out;
+	-moz-animation: bar-fill-dart 2s ease-out;
+	-webkit-animation: bar-fill-dart 2s ease-out;
+}
+
+@keyframes bar-fill-dart {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 60%;
+	}
+}
+
+@-moz-keyframes bar-fill-dart {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 60%;
+	}
+}
+
+@-webkit-keyframes bar-fill-dart {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 60%;
+	}
+}
+
+.bar-fill-csharp {
+	width: 80%;
+	background-color: #101010;
+	animation: bar-fill-csharp 2s ease-out;
+	-moz-animation: bar-fill-csharp 2s ease-out;
+	-webkit-animation: bar-fill-csharp 2s ease-out;
+}
+
+@keyframes bar-fill-csharp {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 80%;
+	}
+}
+
+@-moz-keyframes bar-fill-csharp {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 80%;
+	}
+}
+
+@-webkit-keyframes bar-fill-csharp {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 80%;
+	}
+}
+
+.bar-fill-c {
+	width: 65%;
+	background-color: #101010;
+	animation: bar-fill-c 2s ease-out;
+	-moz-animation: bar-fill-c 2s ease-out;
+	-webkit-animation: bar-fill-c 2s ease-out;
+}
+
+@keyframes bar-fill-c {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 65%;
+	}
+}
+
+@-moz-keyframes bar-fill-c {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 65%;
+	}
+}
+
+@-webkit-keyframes bar-fill-c {
+	0% {
+		width: 0px;
+	}
+
+	100% {
+		width: 65%;
 	}
 }
 
